@@ -1,0 +1,154 @@
+/* Import Google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
+
+  
+}
+
+.information{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+
+}
+.information h3{
+    margin-right: 40px;
+}
+.color{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#color1{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    margin:0 10px 0 50px;
+}
+#color2{
+    width: 15px;
+    height: 15px;
+    background-color: #60CBFF;
+    margin:0 10px ;
+}
+
+.wrapper {
+  width: 80vmin;
+  height: 80vmin;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  background: #293447;
+  
+  /* box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2); */
+}
+.game-details {
+  color: #B8C6DC;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 20px 27px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.play-board {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  /* background: #ffffff6c; */
+  background-image: url(adiba-.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
+
+.play-board .food {
+  background: #FF003D;
+  border-radius: 50%;
+}
+.play-board .head {
+  background: #60CBFF;
+}
+
+.controls {
+  display: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 50%;
+}
+.controls i {
+  padding: 25px 0;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #ffffff;
+  width: calc(100% / 2);
+
+  cursor: pointer;
+  border: 1px solid #1a2617;
+}
+
+.controls .fa-solid{
+    font-size: 30px;
+    width: 50%;
+    height: auto;
+}
+
+.controls .full{
+    width: 100%;
+    height: auto;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    width: 97vmin;
+    height: 175vmin;
+  }
+  .game-details {
+    font-size: 1rem;
+    padding: 15px 27px;
+  }
+  .controls {
+    display: flex;
+  }
+  .controls i {
+    padding: 15px 0;
+    font-size: 1rem;
+  }
+
+
+  .information{
+    margin-top: -90px;
+    width: 90%;
+}
+
+.information h3{
+    margin-right: 8px;
+}
+#color1{
+    margin-left: 10px;
+}
+  
+}
+
